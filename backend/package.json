@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend do Lupus21, plataforma multiplayer de Blackjack (21) desenvolvida para o projeto FIPP/UNOESTE. API RESTful construída com Node.js e Express, utilizando autenticação JWT, WebSocket para partidas em tempo real, Swagger para documentação e integração com a Deck of Cards API para gerenciamento de baralhos e cartas.",
+  "keywords": [
+    "blackjack",
+    "multiplayer",
+    "lupus21",
+    "express",
+    "websocket"
+  ],
+  "homepage": "https://github.com/Luizote1/Lupus21#readme",
+  "bugs": {
+    "url": "https://github.com/Luizote1/Lupus21/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luizote1/Lupus21.git"
+  },
+  "license": "ISC",
+  "author": "Luiz Gustavo Sá, Lucas Aparecido, Edwyn Wylly, Fabio Paulo, Felipe Santos",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
