@@ -5,6 +5,10 @@ import cookieParser from 'cookie-parser';
 import swaggerUi from 'swagger-ui-express';
 import {createRequire} from 'module';
 
+//importar rotas
+import LoginRouter from './routes/loginRoute.js';
+import UsuarioRouter from './routes/usuarioRoute.js';
+
 const server = express();
 server.use(express.json());
 server.use(cookieParser());
@@ -15,6 +19,8 @@ const outputJson = require("./swagger-output.json");
 
 //definição da rota que irá expor a págna de documentaçã
 server.use("/docs", swaggerUi.serve, swaggerUi.setup(outputJson));
+server.use("/login", LoginRouter);
+server.use("/usuario", UsuarioRouter);
 
 server.listen(5000, function(){
     console.log("servidor Funcionando");
